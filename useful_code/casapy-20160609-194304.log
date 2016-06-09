@@ -1,0 +1,46 @@
+2016-06-09 19:43:05	INFO	casa::::	---
+2016-06-09 19:43:05	INFO	casa::::	CASA Version 4.6.0-REL (r36590)
+2016-06-09 19:43:05	INFO	casa::::	  Tagged on: 2016-04-01 11:11:00 -0400 (Fri, 01 Apr 2016)
+2016-06-09 19:43:50	INFO	importuvfits::utils::verify	Verifying arguments....File existence checking failed for fitsfile 
+2016-06-09 19:43:50	WARN	importuvfits::utils::verify	Argument fitsfile failed to verify.
+2016-06-09 19:43:50	SEVERE	importuvfits::::	An error occurred running task importuvfits.
+2016-06-09 19:44:50	INFO	importuvfits::::	
+2016-06-09 19:44:50	INFO	importuvfits::::+	##########################################
+2016-06-09 19:44:50	INFO	importuvfits::::+	##### Begin Task: importuvfits       #####
+2016-06-09 19:44:50	INFO	importuvfits::::	importuvfits(fitsfile="zen.2455016.68855.uvcc.fits",vis="",antnamescheme="old")
+2016-06-09 19:44:50	INFO	importuvfits::::	
+2016-06-09 19:44:50	SEVERE	MSFitsInput::MSFitsInput	Error in output file: File string is empty
+2016-06-09 19:44:50	SEVERE	ms::fromfits	2016-06-09 19:44:50	SEVERE	MSFitsInput::MSFitsInput	Error in output file: File string is empty
+2016-06-09 19:44:50	SEVERE	importuvfits::::	*** Error ***2016-06-09 19:44:50	SEVERE	MSFitsInput::MSFitsInput	Error in output file: File string is empty
+2016-06-09 19:44:50	INFO	importuvfits::::	##### End Task: importuvfits         #####
+2016-06-09 19:44:50	INFO	importuvfits::::+	##########################################
+2016-06-09 19:45:56	INFO	importuvfits::::	
+2016-06-09 19:45:56	INFO	importuvfits::::+	##########################################
+2016-06-09 19:45:56	INFO	importuvfits::::+	##### Begin Task: importuvfits       #####
+2016-06-09 19:45:56	INFO	importuvfits::::	importuvfits(fitsfile="zen.2455016.68855.uvcc.fits",vis="",antnamescheme="old")
+2016-06-09 19:45:56	INFO	importuvfits::::	
+2016-06-09 19:45:56	SEVERE	MSFitsInput::MSFitsInput	Error in output file: File string is empty
+2016-06-09 19:45:56	SEVERE	ms::fromfits	2016-06-09 19:45:56	SEVERE	MSFitsInput::MSFitsInput	Error in output file: File string is empty
+2016-06-09 19:45:56	SEVERE	importuvfits::::	*** Error ***2016-06-09 19:45:56	SEVERE	MSFitsInput::MSFitsInput	Error in output file: File string is empty
+2016-06-09 19:45:56	INFO	importuvfits::::	##### End Task: importuvfits         #####
+2016-06-09 19:45:56	INFO	importuvfits::::+	##########################################
+2016-06-09 19:46:22	INFO	importuvfits::::	
+2016-06-09 19:46:22	INFO	importuvfits::::+	##########################################
+2016-06-09 19:46:22	INFO	importuvfits::::+	##### Begin Task: importuvfits       #####
+2016-06-09 19:46:22	INFO	importuvfits::::	importuvfits(fitsfile="zen.2455016.68855.uvcc.fits",vis="test.ms",antnamescheme="old")
+2016-06-09 19:46:22	INFO	importuvfits::::	
+2016-06-09 19:46:22	INFO	MSFitsInput::MSFitsInput	Converting FITS file 'zen.2455016.68855.uvcc.fits' to MeasurementSet 'test.ms'
+2016-06-09 19:46:22	INFO		FITS card 39: DATE-OBS= '2009-07-04 04:31:29.000'                                             
+2016-06-09 19:46:22	INFO		Illegal date format.
+2016-06-09 19:46:22	INFO		FITS card 45: CRVAL3  =                   -6                                                  
+2016-06-09 19:46:22	INFO		Keyword value has wrong data type.
+2016-06-09 19:46:22	INFO		... converted to type double.
+2016-06-09 19:46:22	INFO	MSFitsInput::setupMeasurementSet	Using tile shape [1, 66, 1985] for PAPER with obstype=0
+2016-06-09 19:46:25	INFO	MSFitsInput::fillMSMainTable	Reading and writing 42588 visibility groups
+2016-06-09 19:46:33	INFO	MSFitsInput::readRandomGroupUVFits	extname=AIPS AN  nrows=16 ncols=9 rowsize=54 pcount=0 gcount=1
+2016-06-09 19:46:33	WARN	MSFitsInput::fillAntennaTable	PAPER there is at least one gap in the antenna sequence found in the FITS AN table. Empty rows will be inserted into the ANTENNA table representing the gaps.
+2016-06-09 19:46:33	INFO	MSFitsInput::fillAntennaTable	Exception while processing UVFITS file. Deleting incomplete MS '/media/philip/STICK0/testdata/test.ms'
+2016-06-09 19:48:39	SEVERE	ms::fromfits	TableRecordRep::get_pointer - incorrect data type used for field RDATE at File: /var/rpmbuild/BUILD/casa-prerelease/casa-prerelease-4.6.0/casacore/msfits/MSFits/MSFitsInput.cc, line: 588
+2016-06-09 19:48:39	SEVERE	importuvfits::::	*** Error ***TableRecordRep::get_pointer - incorrect data type used for field RDATE at File: /var/rpmbuild/BUILD/casa-prerelease/casa-prerelease-4.6.0/casacore/msfits/MSFits/MSFitsInput.cc, line: 588
+2016-06-09 19:48:39	INFO	importuvfits::::	##### End Task: importuvfits         #####
+2016-06-09 19:48:39	INFO	importuvfits::::+	##########################################
