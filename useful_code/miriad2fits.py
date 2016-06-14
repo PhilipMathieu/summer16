@@ -12,6 +12,8 @@ args = parser.parse_args()
 if args.d:
     mdir = args.mir
     files = os.listdir(mdir)
+    for filename in files:
+        filename = mdir+filename
 else:
     files = [args.mir]
 print files

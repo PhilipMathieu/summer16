@@ -9,14 +9,16 @@ parser.add_argument('-d',action='store_true')
 parser.add_argument('mir', help='Path of input Miriad file')
 parser.add_argument('-f','--fits', help='Path of output UVFits file')
 args = parser.parse_args()
-print args
 if args.d:
     mdir = args.mir
     files = os.listdir(mdir)
+    for filename in files:
+        filename = mdir+filename
 else:
     files = [args.mir]
 print files
 for infile in files:
+    infile = args.mir+infile
     if not(args.fits == None) and not args.d:
         outfile = args.fits
     else:
