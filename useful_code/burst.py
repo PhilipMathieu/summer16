@@ -51,21 +51,6 @@ class AntennaArray(a.pol.AntennaArray):
 
 #================GENERATE ARRAY SPECIFIC PARAMETERS==========================
 
-#temporary code just seeding with random positions
-inpos = 20-40*n.random.rand(8,2) #for now, just try a random set of coordinates
-inpos = n.concatenate((inpos,n.zeros((8,1))),axis=1) # add zero for elevation
-
-#function to generate a random point using gaussian distribution
-def propose(x,propsd=1):
-    x2 = n.random.normal(x[0],propsd)
-    y2 = n.random.normal(x[1],propsd)
-    z2=0
-    return (x2,y2,z2)
-
-#apply function to generat options
-antpos = n.apply_along_axis(propose,axis=1,arr=inpos)
-
-#Gaussian distribution around seeded positions
 #Set other array parameters here
 prms = {
     'name': os.path.basename(__file__)[:-3], #remove .py from filename
