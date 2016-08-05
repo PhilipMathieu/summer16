@@ -1,4 +1,5 @@
 /casa_tutorials
 /hera-noise/data/*
+!/hera-noise/data/current.txt
 /hera-noise/venv*
 *~
